@@ -49,7 +49,7 @@ export default function GetSlider() {
         ) : (
           sliderData.map((item) => (
             <SwiperSlide key={item.id}>
-              <div className="slider-image-wrapper">
+              <div className="">
                 <img src={item.image} alt="slider" className="slider-image" />
                 <div className="slider-overlay">
                   <div className="slider-content">
@@ -66,7 +66,7 @@ export default function GetSlider() {
             </SwiperSlide>
           ))
         )}
-     
+        <div className="swiper-pagination"></div>
       </Swiper>
     </div>
   );

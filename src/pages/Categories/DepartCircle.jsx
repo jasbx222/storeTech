@@ -62,7 +62,7 @@ function DepartCircle() {
             className="btn btn-outline-primary"
             onClick={() => setShowAll(!showAll)}
           >
-            {showAll ? "عرض أقل" : "عرض المزيد"}
+            {showAll ? "عرض أقل" : "..عرض المزيد"}
           </button>
         </div>
       )}
