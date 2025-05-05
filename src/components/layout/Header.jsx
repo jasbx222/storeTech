@@ -278,7 +278,7 @@ const Header = () => {
   const notifications = [
     { id: 1, text: "لم يتم إنشاء الحساب بنجاح", time: "منذ 20 دقيقة" },
     { id: 2, text: "تم تغيير كلمة المرور بنجاح", time: "منذ 5 ساعات" },
-    { id: 3, text: "تم وصول الطلب", time: "منذ يومين" },
+   
   ];
 
   const toggleSidebar = () => {
