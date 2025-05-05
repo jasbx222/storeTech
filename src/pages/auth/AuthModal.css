@@ -1,0 +1,128 @@
+.modal-container {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: var(--font) !important;
+}
+.css-16xl4zq-MuiTypography-root{
+  font-family: var(--font) !important;
+}
+.box-part{
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 50px 30px;
+  text-align: center;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 80px auto;
+}
+.box-part h5{
+  line-height: 38px;
+  font-size: 32px;
+  text-align: start;
+  margin-bottom: 20px;
+}
+.box-part p{
+  font-size: 12px;
+  color: #F6F6F8;
+  line-height: 18px;
+  text-align: start;
+}
+  .left-panel {
+    background: var(--secondary-color);
+    border-radius:0  20px 20px 0;
+    color: white;
+   
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .modal-container label{
+    font-size: 14px;
+    color: var(--secondary-color);
+    line-height: 18px;
+    margin-bottom: 10px;
+
+  }
+  
+  .right-panel {
+   width: 50%;
+    padding: 40px;
+    
+  }
+  .css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input,
+  .css-w1k696-MuiTypography-root{
+color: rgba(0, 0, 0, 0.5) !important;
+  }
+  .right-panel .css-53g0n7-MuiButtonBase-root-MuiIconButton-root{
+    color: var(--secondary-color )!important;
+    opacity: .7;
+  }
+  .wel-text{
+    line-height: 28px;
+    color: var(--secondary-color);
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .left-text {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  button.submit-button {
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+    margin-top: 20px;
+    display: block;
+  }
+  .left-panel{
+    width: 50%;
+  }
+ 
+  .submit-button:hover {
+   opacity: .7;
+  }
+
+
+  input{
+    padding: 5px !important;
+    
+  }
+  .right-panel input{
+    height: 30px !important;
+  }
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white !important;
+  }
+  
+  @media (max-width: 992px) {
+    .modal-container {
+      flex-direction: column;
+      width: 90%;
+    }
+  
+    .left-panel {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .right-panel {
+      width: 100%;
+    }
+  }
+  

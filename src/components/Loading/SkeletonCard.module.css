@@ -1,0 +1,136 @@
+.skeletonCard {
+    background: #f2f2f2;
+    border-radius: 10px;
+    padding: 16px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 16px;
+    animation: pulse 1.5s infinite ease-in-out;
+  }
+  
+  .skeletonCard  .image {
+    width: 100%;
+    height: 120px;
+    background: #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .skeletonCard  .line {
+    height: 12px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    width: 80%;
+  }
+  
+  @keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+  }
+  .skeletonListCard {
+    display: flex;
+    gap: 16px;
+    background-color: #fff;
+    padding: 16px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    animation: pulse 1.6s infinite ease-in-out;
+  }
+  
+  .skeletonListCard .image {
+    width: 160px;
+    height: 120px;
+    background-color: #e0e0e0;
+    border-radius: 6px;
+  }
+  
+  .skeletonListCard .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .skeletonListCard .title,
+  .skeletonListCard  .description,
+  .skeletonListCard  .price {
+    height: 16px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .skeletonListCard  .title {
+    width: 60%;
+  }
+  
+  .skeletonListCard .description {
+    width: 80%;
+  }
+  .skeletonListCard  .price {
+    width: 30%;
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: #e0e0e0;
+    }
+    50% {
+      background-color: #f0f0f0;
+    }
+    100% {
+      background-color: #e0e0e0;
+    }
+  }
+  .offerCard {
+    background-color: #f8f3ed;
+    padding: 16px;
+    border-radius: 16px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    animation: pulse 1.5s infinite ease-in-out;
+    direction: ltr;
+    overflow: hidden;
+  }
+  
+  .offerCard  .tag {
+    width: 40px;
+    height: 20px;
+    border-radius: 6px;
+    background-color: #ddd;
+    margin-bottom: 12px;
+  }
+  
+  .offerCard .image {
+    width: 50%;
+    height: 160px;
+    border-radius: 10%;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: end;
+    margin-top: -60px;
+    margin-right: -60px;
+  }
+  
+  .offerCard .discount {
+    width: 80%;
+    height: 16px;
+    background-color: #ccc;
+    border-radius: 4px;
+    text-align: left;
+    
+  }
+  .imgcont{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+  }

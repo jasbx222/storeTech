@@ -1,0 +1,104 @@
+/* Sidebar.css */
+.sidbarsearch .sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hidden */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    border-left: 1px solid rgba(205, 205, 205, 1);
+  }
+  
+.sidbarsearch  .sidebar.open {
+    left: 0; /* Show sidebar */
+  }
+  
+  .sidbarsearch .sidebar-content {
+   
+  }
+  
+.sidbarsearch  input[type="search"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    
+  }
+  
+ .sidbarsearch  .search-results {
+    margin-top: 20px;
+    pad: 20px;
+  }
+  
+  .sidbarsearch .search-results p {
+    color: #333;
+  }
+  
+  /* Close button styling */
+.sidbarsearch   .close-btn {
+    /* position: absolute; */
+    top: 10px;
+  left: 10px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    padding: 0;
+  }
+  .topsidbar{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(205, 205, 205, 1);
+    padding: 20px;
+  }
+  .topsidbar h4{
+    font-size: 18px;
+    line-height: 24px;
+  }
+ .sidbarsearch  .close-btn:hover {
+   
+  }
+  
+  /* Header styles */
+ .sidbarsearch  .header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  
+ .sidbarsearch  button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: rgba(205, 205, 205, 1);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+
+  .sidbarsearch .search-container{
+    border: 1px solid rgba(205, 205, 205, 1);
+    border-radius: 100px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(205, 205, 205, 1);
+    margin: 4px;
+  }
+  .sidbarsearch .search-container input{
+    border: none;
+    outline: none;
+
+  }
+  .search-result{
+    padding: 0 !important;
+  }
+  .search-result h4,.no-results{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    border: 1px solid rgba(205, 205, 205, 1);
+  }

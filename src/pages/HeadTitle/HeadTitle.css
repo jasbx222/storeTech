@@ -1,0 +1,18 @@
+.head-title-container {
+    background-color: var(--secondary-color); 
+    padding: 20px;
+    text-align: center;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .head-title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+  }
+  

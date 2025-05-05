@@ -1,0 +1,378 @@
+/* Header Container */
+.header-container {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 1rem 0;
+}
+
+header {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  background-color: var(--primary-color);
+}
+
+.header-content {
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Logo */
+.logo-container {
+  flex-shrink: 0;
+}
+
+.logo-image {
+  height: 60px;
+  width: auto;
+}
+
+/* Mobile Burger Icon */
+.burger-menu {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.burger-menu:hover {
+  color: var(--secondary-color);
+}
+
+/* Main Navigation */
+.main-nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--secondary-color);
+}
+
+/* Search Bar */
+.search-container {
+  flex: 1;
+ 
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+ padding-right: 20px !important;
+  transition: all 0.3s ease;
+  border: none;
+width: 90%;
+max-width: 100%;
+}
+
+.nav-link.active-link{
+  color: var(--secondary-color);
+}
+.search-input:focus {
+  outline: none;
+  border: none;
+  
+}
+.search-icon{
+  border: none;
+  padding: 0;
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+  background-color: transparent;
+}
+.search-button {
+  position: absolute;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  color: var(--secondary-color);
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button:hover {
+  color: var(--secondary-color);
+}
+
+/* User Actions */
+.user-actions {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.user-actions span {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+}
+.user-actions .with-bord {
+  
+  padding-right: 10px;
+  font-size: 20px;
+}
+.user-actions .with-bord:hover{
+  cursor: pointer;
+}
+.action-icon {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.action-icon:hover {
+  color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-nav {
+    gap: 1.5rem;
+  }
+
+  .user-actions {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header-content {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .main-nav {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    display: none;
+    flex-direction: column;
+    animation: slideIn 0.3s ease-out;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .search-container {
+    order: 2;
+    max-width: none;
+  }
+
+  .user-actions {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Burger Menu visibility */
+  .burger-menu {
+    display: block;
+    color: var(--secondary-color);
+  }
+}
+
+/* Animation for the mobile menu */
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Hide some elements on mobile */
+@media (max-width: 640px) {
+  .nav-link span {
+    display: none;
+  }
+
+  .action-icon span {
+    display: none;
+  }
+}
+.notifications-dropdown {
+  position: absolute;
+  top: 85px;
+  min-width: 250px; 
+  max-height: 400px; 
+  overflow-y: auto; 
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px;
+  padding: 0;
+  z-index: 1000; 
+}
+.not-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.notifications-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notifications-dropdown li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.notifications-dropdown li:hover {
+  background-color: var(--primary-color); 
+}
+
+.notifications-dropdown li .notification-time {
+  font-size: 12px;
+  color: #999;
+}
+
+.notifications-dropdown li .close-notification {
+  cursor: pointer;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.notifications-dropdown li .close-notification:hover {
+  color: var(--secondary-color);
+}
+.cart-icon {
+  position: relative;
+}
+
+.cart-count-badge {
+  position: absolute;
+  top: -16px;
+
+  background: var(--secondary-color);
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 0px ;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  
+}
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 300px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.search-result-item img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: rgba(205, 205, 205, 0.2);
+}
+
+.search-skeletons {
+  padding: 10px;
+}
+
+.skeleton-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skeleton-img {
+  width: 40px;
+  height: 40px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  margin-left: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+.skeleton-text {
+  width: 100px;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  animation: pulse 1.5s infinite;
+}
+.search-result-item img{
+  margin: 5px 0px 5px 10px ;
+}
+.search-result-item a{
+  color: var(--secondary-color);
+  
+  display: flex;
+  width: 100%;
+}
+.search-result-item a div{
+  width: 100%;
+}
+.search-result-item a span{
+  color: #9F9F9F;
+  font-size: 12px;
+}
+@keyframes pulse {
+  0% { background-color: #e0e0e0; }
+  50% { background-color: #f0f0f0; }
+  100% { background-color: #e0e0e0; }
+}
+
+.css-22d4c0-MuiPaper-root-MuiAppBar-root,
+.css-1kds8o2-MuiPaper-root-MuiAppBar-root{
+  width: max-content !important;
+  background-color: transparent !important;
+  position: static !important;
+  box-shadow: none !important;
+  color: var(--secondary-color) !important;
+}
